@@ -2,7 +2,9 @@
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Welcome! 👋<img width="545" alt="Zrzut ekranu 2024-01-15 175820" src="https://github.com/pufex/newsletter/assets/78880541/6d0e0f56-bf66-4c13-972a-c784c24e2e22">
+<img width="545" alt="Zrzut ekranu 2024-01-15 175827" src="https://github.com/pufex/newsletter/assets/78880541/beb865f3-3445-4111-9d53-1ef00457d317">
+
 
 Thanks for checking out this front-end coding challenge.
 
