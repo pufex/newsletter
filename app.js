@@ -8,20 +8,24 @@ const errorLabel = document.querySelector('.error-label');
 const preview = document.querySelector('.preview');
 const success = document.querySelector('.success');
 
+const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 let emailAddress;
 
 sub.addEventListener('click', (event) =>{
   event.preventDefault();
   emailAddress = email.value;
-  if(emailAddress){
+  
+  if(emailAddress && emailAddress.match(validRegex)){
     preview.classList.add('hidden');
     success.classList.remove('hidden');
     emailSent.innerText = emailAddress;
+    email.value=''
+    
   }else{
     errorLabel.classList.remove('hidden');
     email.classList.add('button-error');
   }
-
+  
 })
 
 submit.addEventListener('click', (event) =>{
@@ -31,6 +35,6 @@ submit.addEventListener('click', (event) =>{
   preview.classList.remove('hidden');
   errorLabel.classList.add('hidden');
   email.classList.remove('button-error');
-
+ 
   console.log(emailAddress);
 })
